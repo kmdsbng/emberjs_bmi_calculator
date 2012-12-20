@@ -49,9 +49,6 @@ App.ApplicationView = Ember.View.extend({
 });
 
 App.CalcTextField = Ember.TextField.extend({
-  insertNewline: (function() {
-    return console.log('hoge');
-  }),
   init: (function() {
     this._super();
     return this.on("focusOut", this, this.recalc);
